@@ -1,0 +1,58 @@
+.work {
+  background-color: $dark-violet;
+  color: $very-light-gray;
+  background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 3.5em 2em;
+  margin: 1em;
+
+  &-title {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 1.5em;
+
+    font-family: $ff-heading;
+  }
+
+  button {
+    padding: 0.75em 1.5em;
+    background-color: transparent;
+    border: 2px solid $very-light-gray;
+    color: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $very-light-gray;
+      color: $dark-violet;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .work {
+    margin-inline: 0;
+    margin-block: 5em;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+
+    &-title {
+      text-align: left;
+      padding: 0;
+
+      font-size: 3rem;
+    }
+  }
+}

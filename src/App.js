@@ -8,13 +8,13 @@ import './styles/style.css'
 
 const App = () => {
   return (
-    <div className='App'>
+    <main className='App'>
       <Navbar />
       <Intro />
       <Info />
       <Work />
       <Footer />
-    </div>
+    </main>
   )
 }
 
